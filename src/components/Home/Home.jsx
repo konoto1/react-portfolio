@@ -1,5 +1,5 @@
 import style from './Home.module.css';
-import picture from '../../../public/picture.jpg';
+import picture from '/picture.jpg';
 
 export const Home = () => {
   return (
