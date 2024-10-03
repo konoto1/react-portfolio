@@ -1,0 +1,37 @@
+/* Header.module.css */
+.headerContainer {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navList {
+    display: inline-flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navList li a {
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navList li a:hover {
+    background-color: #5442f6d8;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .navList {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

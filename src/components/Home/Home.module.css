@@ -1,0 +1,49 @@
+/* Home.module.css */
+.mainContainer {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.mainContainer h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.paragraph img {
+    border-radius: 10px;
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.paragraph p {
+    max-width: 600px;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .paragraph {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainContainer h1 {
+        font-size: 36px;
+    }
+
+    .paragraph p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+}
