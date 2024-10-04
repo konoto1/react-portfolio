@@ -1,7 +1,7 @@
 import style from './Project.module.css';
-import hangman from '/hangman.jfif';
+import hangman from '/hangman.jpg';
 import todo from '/todo.webp';
-import portfolio from '/portfolio.png';
+import portfolio from '/portfolio.jpg';
 import tictactoe from '/tictactoe.jpg';
 
 export const Projects = () => {
