@@ -1,11 +1,15 @@
 import style from './Project.module.css';
+import hangman from '/hangman.jfif';
+import todo from '/todo.webp';
+import portfolio from '/portfolio.png';
+import tictactoe from '/tictactoe.jpg';
 
 export const Projects = () => {
   const projectList = [
-    { title: 'Project 1', description: 'HTML-based todo app', url: 'https://konoto1.github.io/html-todo/', img: './src/assets/todo.webp' },
-    { title: 'Project 2', description: 'Portfolio website', url: 'https://konoto1.github.io/html-grupinisdarbas/', img: './src/assets/portfolio.png' },
-    { title: 'Project 3', description: 'Hangman Game', url: 'https://konoto1.github.io/react-hangman/', img: './src/assets/hangman.jfif' },
-    { title: 'Project 4', description: 'Tic-Tac-Toe Game', url: 'https://konoto1.github.io/html-tic-tac-toe/', img: './src/assets/tictactoe.jpg' },
+    { title: 'Project 1', description: 'HTML-based todo app', url: 'https://konoto1.github.io/html-todo/', img: `${todo}` },
+    { title: 'Project 2', description: 'Portfolio website', url: 'https://konoto1.github.io/html-grupinisdarbas/', img: `${portfolio}` },
+    { title: 'Project 3', description: 'Hangman Game', url: 'https://konoto1.github.io/react-hangman/', img: `${hangman}` },
+    { title: 'Project 4', description: 'Tic-Tac-Toe Game', url: 'https://konoto1.github.io/html-tic-tac-toe/', img: `${tictactoe}` },
   ];
 
 
