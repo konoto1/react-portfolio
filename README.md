@@ -13,7 +13,7 @@ Web Portfolio with React
 
 This project is for educational purposes only.
 
-Site published at: --
+Site published at: [Here](https://konoto1.github.io/react-portfolio/)
 
 Design: --
 
