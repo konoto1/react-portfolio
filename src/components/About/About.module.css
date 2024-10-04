@@ -1,7 +1,22 @@
-/* About.module.css */
 .aboutContainer {
     text-align: center;
     padding: 40px 20px;
+}
+
+.paragraph {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    color: #555;
+}
+
+.paragraph img {
+    border-radius: 10px;
+    max-width: 20rem;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .aboutText {
@@ -12,8 +27,28 @@
 }
 
 @media (max-width: 768px) {
+    .paragraph {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .aboutText {
-        font-size: 16px;
+        font-size: 1.1rem;
         padding: 0 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutContainer h2 {
+        font-size: 1.8rem;
+    }
+
+    .aboutText {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    .paragraph img {
+        max-width: 90%;
     }
 }

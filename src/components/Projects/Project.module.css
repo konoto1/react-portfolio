@@ -21,8 +21,9 @@
 
 .projectCard img {
    max-width: 100%;
-   height: auto;
+   height: 200px;
    border-radius: 6px;
+   object-fit: cover;
 }
 
 .projectCard:hover {
@@ -55,5 +56,11 @@
 @media (max-width: 768px) {
    .projectGrid {
       grid-template-columns: 1fr;
+   }
+}
+
+@media (max-width: 600px) {
+   .projectCard {
+      padding: 15px;
    }
 }

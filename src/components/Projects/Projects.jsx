@@ -14,17 +14,19 @@ export const Projects = () => {
 
 
   return (
-    <div className={style.projectsContainer}>
-      <h2>My Projects</h2>
-      <div className={style.projectGrid}>
-        {projectList.map((project, index) => (
-          <div key={index} className={style.projectCard}>
-            <img src={project.img} alt={project.title} />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a href={project.url} target="_blank" rel="noreferrer">View Project</a>
-          </div>
-        ))}
+    <div className="container">
+      <div className={style.projectsContainer}>
+        <h2>My Projects</h2>
+        <div className={style.projectGrid}>
+          {projectList.map((project, index) => (
+            <div key={index} className={style.projectCard}>
+              <img src={project.img} alt={project.title} />
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <a href={project.url} target="_blank" rel="noreferrer">View Project</a>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

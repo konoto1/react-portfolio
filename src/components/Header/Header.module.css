@@ -16,6 +16,15 @@
     left: 0;
 }
 
+.navContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .navList {
     display: inline-flex;
     gap: 30px;
@@ -40,9 +49,40 @@
     transform: scale(1.05);
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
 @media (max-width: 768px) {
     .navList {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1f1f1f;
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
+        padding: 20px 0;
+        display: none;
+        /* Hidden by default */
+    }
+
+    .showMenu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
     }
 }
